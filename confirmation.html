@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pedido confirmado - Cosecha Editorial" />
+  <meta name="theme-color" content="#355220" />
+  <title>Pedido Confirmado - Cosecha Editorial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary-container": "#4c6b36",
+            "on-error": "#ffffff",
+            "on-error-container": "#93000a",
+            "on-surface": "#1c1c16",
+            "tertiary-fixed": "#ffdcbb",
+            "surface-bright": "#fdf9ef",
+            "on-primary": "#ffffff",
+            "on-tertiary-fixed": "#2b1700",
+            "inverse-surface": "#31312a",
+            "on-tertiary-fixed-variant": "#673d00",
+            "inverse-primary": "#add191",
+            "secondary-fixed": "#ffdcc4",
+            "on-primary-fixed-variant": "#314e1d",
+            "primary-fixed-dim": "#add191",
+            "secondary": "#924c00",
+            "surface-container-lowest": "#ffffff",
+            "primary-fixed": "#c9eeab",
+            "primary": "#355220",
+            "on-secondary-fixed-variant": "#6f3800",
+            "on-secondary-fixed": "#2f1400",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed-dim": "#faba75",
+            "tertiary": "#6c4103",
+            "surface-tint": "#486732",
+            "surface-container-high": "#ece8de",
+            "on-background": "#1c1c16",
+            "on-primary-fixed": "#0a2000",
+            "secondary-fixed-dim": "#ffb781",
+            "on-primary-container": "#c6eaa8",
+            "tertiary-container": "#88581c",
+            "inverse-on-surface": "#f4f0e7",
+            "surface-variant": "#e6e2d9",
+            "on-tertiary-container": "#ffd8b2",
+            "on-secondary-container": "#703800",
+            "secondary-container": "#fda055",
+            "outline": "#74796d",
+            "surface": "#fdf9ef",
+            "on-tertiary": "#ffffff",
+            "outline-variant": "#c4c8ba",
+            "on-surface-variant": "#43483e",
+            "error-container": "#ffdad6",
+            "background": "#fdf9ef",
+            "surface-container-highest": "#e6e2d9",
+            "error": "#ba1a1a",
+            "surface-container": "#f1eee4",
+            "surface-dim": "#dddad0",
+            "surface-container-low": "#f7f3e9"
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            "2xl": "1rem",
+            "3xl": "1.5rem",
+            full: "9999px"
+          },
+          fontFamily: {
+            headline: ["Newsreader", "serif"],
+            body: ["Plus Jakarta Sans", "sans-serif"],
+            label: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fdf9ef; color: #1c1c16; -webkit-font-smoothing: antialiased; }
+    h1, h2, h3, h4 { font-family: 'Newsreader', serif; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; display: inline-flex; align-items: center; }
+    @keyframes slideIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    main { animation: slideIn 0.5s ease-out; }
+  </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen pb-24">
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/10">
+    <div class="max-w-2xl mx-auto h-16 flex items-center justify-between px-6">
+      <button onclick="history.back()" class="w-10 h-10 rounded-full hover:bg-primary/10 transition-colors flex items-center justify-center" aria-label="Volver">
+        <span class="material-symbols-outlined text-primary">arrow_back</span>
+      </button>
+      <h1 class="text-2xl font-serif italic text-primary">Cosecha Editorial</h1>
+      <div class="w-10"></div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="pt-24 px-6 max-w-2xl mx-auto">
+    <section class="text-center mb-10">
+      <div class="mx-auto mb-6 w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
+        <span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+      </div>
+      <span class="text-xs uppercase tracking-widest text-primary font-bold">Pedido confirmado</span>
+      <h2 class="text-4xl font-serif italic text-primary mt-3">¡Gracias por tu compra!</h2>
+      <p class="mt-4 text-on-surface-variant text-sm">Tu pedido está listo para ser recogido o enviado con cuidado desde el huerto.</p>
+    </section>
+
+    <!-- Order Details -->
+    <section class="bg-surface-container-low rounded-3xl p-6 shadow-md mb-8">
+      <div class="flex justify-between items-center mb-6">
+        <div>
+          <p class="text-xs uppercase tracking-widest text-on-surface-variant">Número de pedido</p>
+          <h3 class="font-serif text-2xl text-primary mt-1">#CE-2024-001234</h3>
+        </div>
+        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Preparando</span>
+      </div>
+
+      <div class="space-y-3 mb-5">
+        <div class="flex justify-between text-sm">
+          <span class="text-on-surface-variant">Tomates de Árbol Rojos</span>
+          <span class="font-bold">2 × $18.500</span>
+        </div>
+        <div class="flex justify-between text-sm">
+          <span class="text-on-surface-variant">Arúgula de Hoja Grande</span>
+          <span class="font-bold">1 × $6.200</span>
+        </div>
+        <div class="flex justify-between text-sm">
+          <span class="text-on-surface-variant">Huevos de Pastoreo</span>
+          <span class="font-bold">1 × $14.000</span>
+        </div>
+      </div>
+
+      <div class="border-b border-outline-variant/20 mb-5"></div>
+
+      <div class="flex justify-between items-center">
+        <span class="text-on-surface-variant">Total pagado</span>
+        <span class="text-2xl font-serif font-bold text-primary">$48.400</span>
+      </div>
+    </section>
+
+    <!-- Delivery Info -->
+    <section class="bg-surface-container rounded-3xl p-6 mb-8 shadow-md">
+      <div class="flex items-start gap-4">
+        <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-primary text-xl">local_shipping</span>
+        </div>
+        <div>
+          <h3 class="font-serif text-xl text-on-surface font-semibold">Entrega estimada</h3>
+          <p class="text-on-surface-variant mt-2 text-sm">Mañana entre las 09:00 y 12:00 h.</p>
+          <p class="text-sm text-on-surface-variant mt-1">Calle de Serrano, 45, 3º Izquierda · Madrid</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Buttons -->
+    <section class="space-y-3 pb-8">
+      <a href="index.html" class="block w-full bg-gradient-to-br from-primary to-primary-container text-on-primary py-4 rounded-3xl font-body font-bold text-lg text-center shadow-lg hover:shadow-xl transition-all hover:scale-[1.01]">
+        Seguir comprando
+      </a>
+      <button class="w-full border-2 border-primary text-primary bg-transparent py-4 rounded-3xl font-body font-bold text-lg hover:bg-primary/5 transition-colors">
+        Ver detalles del pedido
+      </button>
+    </section>
+  </main>
+</body>
+</html>
