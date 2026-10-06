@@ -1,292 +1,297 @@
 <!DOCTYPE html>
 <html lang="es" class="light">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mi cesta de Cosecha Editorial - Productos frescos del huerto" />
-  <meta name="theme-color" content="#355220" />
-  <title>Mi Cesta - Cosecha Editorial</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary-container": "#4c6b36",
-            "on-error": "#ffffff",
-            "on-error-container": "#93000a",
-            "on-surface": "#1c1c16",
-            "tertiary-fixed": "#ffdcbb",
-            "surface-bright": "#fdf9ef",
-            "on-primary": "#ffffff",
-            "on-tertiary-fixed": "#2b1700",
-            "inverse-surface": "#31312a",
-            "on-tertiary-fixed-variant": "#673d00",
-            "inverse-primary": "#add191",
-            "secondary-fixed": "#ffdcc4",
-            "on-primary-fixed-variant": "#314e1d",
-            "primary-fixed-dim": "#add191",
-            "secondary": "#924c00",
-            "surface-container-lowest": "#ffffff",
-            "primary-fixed": "#c9eeab",
-            "primary": "#355220",
-            "on-secondary-fixed-variant": "#6f3800",
-            "on-secondary-fixed": "#2f1400",
-            "on-secondary": "#ffffff",
-            "tertiary-fixed-dim": "#faba75",
-            "tertiary": "#6c4103",
-            "surface-tint": "#486732",
-            "surface-container-high": "#ece8de",
-            "on-background": "#1c1c16",
-            "on-primary-fixed": "#0a2000",
-            "secondary-fixed-dim": "#ffb781",
-            "on-primary-container": "#c6eaa8",
-            "tertiary-container": "#88581c",
-            "inverse-on-surface": "#f4f0e7",
-            "surface-variant": "#e6e2d9",
-            "on-tertiary-container": "#ffd8b2",
-            "on-secondary-container": "#703800",
-            "secondary-container": "#fda055",
-            "outline": "#74796d",
-            "surface": "#fdf9ef",
-            "on-tertiary": "#ffffff",
-            "outline-variant": "#c4c8ba",
-            "on-surface-variant": "#43483e",
-            "error-container": "#ffdad6",
-            "background": "#fdf9ef",
-            "surface-container-highest": "#e6e2d9",
-            "error": "#ba1a1a",
-            "surface-container": "#f1eee4",
-            "surface-dim": "#dddad0",
-            "surface-container-low": "#f7f3e9"
-          },
-          borderRadius: {
-            DEFAULT: "0.25rem",
-            lg: "0.5rem",
-            xl: "0.75rem",
-            "2xl": "1rem",
-            "3xl": "1.5rem",
-            full: "9999px"
-          },
-          fontFamily: {
-            headline: ["Newsreader", "serif"],
-            body: ["Plus Jakarta Sans", "sans-serif"],
-            label: ["Plus Jakarta Sans", "sans-serif"]
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mi cesta - Cosecha Editorial" />
+    <meta name="theme-color" content="#355220" />
+    <title>Mi Cesta - Cosecha Editorial</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#4c6b36",
+              "on-error": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-surface": "#1c1c16",
+              "tertiary-fixed": "#ffdcbb",
+              "surface-bright": "#fdf9ef",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed": "#2b1700",
+              "inverse-surface": "#31312a",
+              "on-tertiary-fixed-variant": "#673d00",
+              "inverse-primary": "#add191",
+              "secondary-fixed": "#ffdcc4",
+              "on-primary-fixed-variant": "#314e1d",
+              "primary-fixed-dim": "#add191",
+              "secondary": "#924c00",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed": "#c9eeab",
+              "primary": "#355220",
+              "on-secondary-fixed-variant": "#6f3800",
+              "on-secondary-fixed": "#2f1400",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed-dim": "#faba75",
+              "tertiary": "#6c4103",
+              "surface-tint": "#486732",
+              "surface-container-high": "#ece8de",
+              "on-background": "#1c1c16",
+              "on-primary-fixed": "#0a2000",
+              "secondary-fixed-dim": "#ffb781",
+              "on-primary-container": "#c6eaa8",
+              "tertiary-container": "#88581c",
+              "inverse-on-surface": "#f4f0e7",
+              "surface-variant": "#e6e2d9",
+              "on-tertiary-container": "#ffd8b2",
+              "on-secondary-container": "#703800",
+              "secondary-container": "#fda055",
+              "outline": "#74796d",
+              "surface": "#fdf9ef",
+              "on-tertiary": "#ffffff",
+              "outline-variant": "#c4c8ba",
+              "on-surface-variant": "#43483e",
+              "error-container": "#ffdad6",
+              "background": "#fdf9ef",
+              "surface-container-highest": "#e6e2d9",
+              "error": "#ba1a1a",
+              "surface-container": "#f1eee4",
+              "surface-dim": "#dddad0",
+              "surface-container-low": "#f7f3e9"
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              "2xl": "1rem",
+              "3xl": "1.5rem",
+              full: "9999px"
+            },
+            fontFamily: {
+              headline: ["Newsreader", "serif"],
+              body: ["Plus Jakarta Sans", "sans-serif"],
+              label: ["Plus Jakarta Sans", "sans-serif"]
+            }
           }
         }
       }
-    };
-  </script>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fdf9ef; color: #1c1c16; -webkit-font-smoothing: antialiased; }
-    h1, h2, h3, h4 { font-family: 'Newsreader', serif; }
-    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; display: inline-flex; align-items: center; }
-    button { transition: all 300ms; }
-    button:active { transform: scale(0.98); }
-    button:hover:not(:disabled) { opacity: 0.95; }
-    button:disabled { opacity: 0.5; cursor: not-allowed; }
-    a { transition: all 300ms; text-decoration: none; }
-    a:hover { opacity: 0.9; }
-  </style>
-</head>
-<body class="bg-surface text-on-surface min-h-screen pb-32">
-  <!-- Header -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/10">
-    <div class="max-w-2xl mx-auto h-16 flex items-center justify-between px-6">
-      <button class="w-10 h-10 rounded-full hover:bg-primary/10 transition-colors flex items-center justify-center" aria-label="Menú">
-        <span class="material-symbols-outlined text-primary">menu</span>
-      </button>
-      <h1 class="text-2xl font-serif italic text-primary">Cosecha Editorial</h1>
-      <div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/20">
-        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Perfil" class="w-full h-full object-cover" loading="lazy" />
-      </div>
-    </div>
-  </header>
-
-  <!-- Main -->
-  <main class="pt-24 px-6 max-w-2xl mx-auto">
-    <section class="mb-10">
-      <h2 class="text-4xl font-serif italic text-primary mb-2">Mi Cesta</h2>
-      <p class="text-on-surface-variant">Cosechas reservadas directamente del huerto.</p>
-    </section>
-
-    <!-- Huerto 1 -->
-    <section class="mb-8">
-      <div class="flex items-center gap-3 mb-5">
-        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-          <span class="material-symbols-outlined text-primary text-lg">potted_plant</span>
-        </div>
-        <div>
-          <h3 class="text-lg font-serif font-semibold text-on-surface">Huerto Los Olivos</h3>
-          <p class="text-xs uppercase tracking-widest text-on-surface-variant">Suesca, Cundinamarca</p>
+    </script>
+    <style>
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background: #fdf9ef;
+        color: #1c1c16;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      h1, h2, h3, h4 { font-family: 'Newsreader', serif; }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      button, a { transition: all 300ms ease; }
+      button:active { transform: scale(0.98); }
+      .shadow-soft { box-shadow: 0 10px 30px rgba(28, 28, 22, 0.06); }
+    </style>
+  </head>
+  <body class="bg-surface text-on-surface min-h-screen pb-32">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#fdf9ef]/80 backdrop-blur-md border-b border-black/5">
+      <div class="max-w-2xl mx-auto h-16 flex items-center justify-between px-6">
+        <button aria-label="Abrir menú" class="w-10 h-10 rounded-full hover:bg-primary/10 flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary">menu</span>
+        </button>
+        <h1 class="text-2xl font-serif italic text-primary">Cosecha Editorial</h1>
+        <div class="w-10 h-10 rounded-full overflow-hidden border border-black/5">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Perfil de usuario" class="w-full h-full object-cover" loading="lazy" />
         </div>
       </div>
+    </header>
 
-      <div class="space-y-4">
-        <!-- Item 1 -->
-        <article class="bg-surface-container-low rounded-xl p-4 flex gap-4 items-center">
-          <div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
-            <img src="https://images.unsplash.com/photo-1592841200221-8f6b8e58e2a8?auto=format&fit=crop&w=300&q=80" alt="Tomates de árbol" class="w-full h-full object-cover" loading="lazy" />
+    <main class="pt-24 px-6 max-w-2xl mx-auto">
+      <section class="mb-10">
+        <h2 class="text-4xl lg:text-5xl font-serif italic text-primary mb-2">Mi Cesta</h2>
+        <p class="text-[15px] text-on-surface-variant">Cosechas reservadas directamente del huerto.</p>
+      </section>
+
+      <section class="mb-8">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary">potted_plant</span>
+          </div>
+          <div>
+            <h3 class="text-xl font-serif text-on-surface">Huerto Los Olivos</h3>
+            <p class="text-[10px] uppercase tracking-[0.22em] text-on-surface-variant">Suesca, Cundinamarca</p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <article class="bg-surface-container-low rounded-xl p-4 flex gap-4 items-center shadow-soft">
+            <div class="w-20 h-20 rounded-lg overflow-hidden shrink-0">
+              <img src="https://images.unsplash.com/photo-1592841200221-8f6b8e58e2a8?auto=format&fit=crop&w=300&q=80" alt="Tomates de árbol" class="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <div class="flex-grow">
+              <h4 class="text-lg font-serif leading-tight text-on-surface">Tomates de Árbol Rojos</h4>
+              <p class="text-sm text-on-surface-variant mb-2">Canastilla 2kg • Orgánico</p>
+              <div class="flex items-center justify-between gap-4">
+                <span class="font-bold text-primary text-lg">$18.500</span>
+                <div class="flex items-center bg-surface-container-highest rounded-full px-3 py-1 gap-3 shadow-sm">
+                  <button class="qty-btn text-primary hover:scale-110 transition-transform" data-product="0" data-action="dec" aria-label="Disminuir cantidad">
+                    <span class="material-symbols-outlined text-sm">remove</span>
+                  </button>
+                  <span class="font-body font-bold text-sm qty qty-0">2</span>
+                  <button class="qty-btn text-primary hover:scale-110 transition-transform" data-product="0" data-action="inc" aria-label="Aumentar cantidad">
+                    <span class="material-symbols-outlined text-sm">add</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="bg-surface-container-low rounded-xl p-4 flex gap-4 items-center shadow-soft">
+            <div class="w-20 h-20 rounded-lg overflow-hidden shrink-0">
+              <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=300&q=80" alt="Arúgula fresca" class="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <div class="flex-grow">
+              <h4 class="text-lg font-serif leading-tight text-on-surface">Arúgula de Hoja Grande</h4>
+              <p class="text-sm text-on-surface-variant mb-2">Manojo 250g • Recién cortado</p>
+              <div class="flex items-center justify-between gap-4">
+                <span class="font-bold text-primary text-lg">$6.200</span>
+                <div class="flex items-center bg-surface-container-highest rounded-full px-3 py-1 gap-3 shadow-sm">
+                  <button class="qty-btn text-primary hover:scale-110 transition-transform" data-product="1" data-action="dec" aria-label="Disminuir cantidad">
+                    <span class="material-symbols-outlined text-sm">remove</span>
+                  </button>
+                  <span class="font-body font-bold text-sm qty qty-1">1</span>
+                  <button class="qty-btn text-primary hover:scale-110 transition-transform" data-product="1" data-action="inc" aria-label="Aumentar cantidad">
+                    <span class="material-symbols-outlined text-sm">add</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary">agriculture</span>
+          </div>
+          <div>
+            <h3 class="text-xl font-serif text-on-surface">Granja Tierra Viva</h3>
+            <p class="text-[10px] uppercase tracking-[0.22em] text-on-surface-variant">Tausa, Cundinamarca</p>
+          </div>
+        </div>
+
+        <article class="bg-surface-container-low rounded-xl p-4 flex gap-4 items-center shadow-soft">
+          <div class="w-20 h-20 rounded-lg overflow-hidden shrink-0">
+            <img src="https://images.unsplash.com/photo-1506975094-869200fa7b10?auto=format&fit=crop&w=300&q=80" alt="Huevos de campo" class="w-full h-full object-cover" loading="lazy" />
           </div>
           <div class="flex-grow">
-            <h4 class="text-lg font-serif leading-tight text-on-surface">Tomates de Árbol Rojos</h4>
-            <p class="text-sm text-on-surface-variant mb-3">Canastilla 2kg • Orgánico</p>
-            <div class="flex items-center justify-between">
-              <span class="font-bold text-primary text-lg">$18.500</span>
+            <h4 class="text-lg font-serif leading-tight text-on-surface">Huevos de Pastoreo (Docena)</h4>
+            <p class="text-sm text-on-surface-variant mb-2">Gallinas libres • Cáscara dura</p>
+            <div class="flex items-center justify-between gap-4">
+              <span class="font-bold text-primary text-lg">$14.000</span>
               <div class="flex items-center bg-surface-container-highest rounded-full px-3 py-1 gap-3 shadow-sm">
-                <button class="qty-btn text-primary hover:scale-110 transition-transform" aria-label="Disminuir" data-idx="0" data-action="dec">
+                <button class="qty-btn text-primary hover:scale-110 transition-transform" data-product="2" data-action="dec" aria-label="Disminuir cantidad">
                   <span class="material-symbols-outlined text-sm">remove</span>
                 </button>
-                <span class="font-body font-bold text-sm qty-0">2</span>
-                <button class="qty-btn text-primary hover:scale-110 transition-transform" aria-label="Aumentar" data-idx="0" data-action="inc">
+                <span class="font-body font-bold text-sm qty qty-2">1</span>
+                <button class="qty-btn text-primary hover:scale-110 transition-transform" data-product="2" data-action="inc" aria-label="Aumentar cantidad">
                   <span class="material-symbols-outlined text-sm">add</span>
                 </button>
               </div>
             </div>
           </div>
         </article>
+      </section>
 
-        <!-- Item 2 -->
-        <article class="bg-surface-container-low rounded-xl p-4 flex gap-4 items-center">
-          <div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
-            <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?auto=format&fit=crop&w=300&q=80" alt="Arúgula" class="w-full h-full object-cover" loading="lazy" />
+      <section class="bg-surface-container p-6 rounded-3xl mb-8 shadow-soft">
+        <h3 class="text-lg font-serif font-bold mb-4 text-on-surface">Resumen de Cosecha</h3>
+        <div class="space-y-3 text-sm">
+          <div class="flex justify-between">
+            <span class="text-on-surface-variant">Subtotal productos</span>
+            <span id="subtotal">$38.700</span>
           </div>
-          <div class="flex-grow">
-            <h4 class="text-lg font-serif leading-tight text-on-surface">Arúgula de Hoja Grande</h4>
-            <p class="text-sm text-on-surface-variant mb-3">Manojo 250g • Recién cortado</p>
-            <div class="flex items-center justify-between">
-              <span class="font-bold text-primary text-lg">$6.200</span>
-              <div class="flex items-center bg-surface-container-highest rounded-full px-3 py-1 gap-3 shadow-sm">
-                <button class="qty-btn text-primary hover:scale-110 transition-transform" aria-label="Disminuir" data-idx="1" data-action="dec">
-                  <span class="material-symbols-outlined text-sm">remove</span>
-                </button>
-                <span class="font-body font-bold text-sm qty-1">1</span>
-                <button class="qty-btn text-primary hover:scale-110 transition-transform" aria-label="Aumentar" data-idx="1" data-action="inc">
-                  <span class="material-symbols-outlined text-sm">add</span>
-                </button>
-              </div>
-            </div>
+          <div class="flex justify-between">
+            <span class="text-on-surface-variant">Logística de campo</span>
+            <span>$8.500</span>
           </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Huerto 2 -->
-    <section class="mb-12">
-      <div class="flex items-center gap-3 mb-5">
-        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-          <span class="material-symbols-outlined text-primary text-lg">agriculture</span>
-        </div>
-        <div>
-          <h3 class="text-lg font-serif font-semibold text-on-surface">Granja Tierra Viva</h3>
-          <p class="text-xs uppercase tracking-widest text-on-surface-variant">Tausa, Cundinamarca</p>
-        </div>
-      </div>
-
-      <article class="bg-surface-container-low rounded-xl p-4 flex gap-4 items-center">
-        <div class="w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
-          <img src="https://images.unsplash.com/photo-1506975094-869200fa7b10?auto=format&fit=crop&w=300&q=80" alt="Huevos" class="w-full h-full object-cover" loading="lazy" />
-        </div>
-        <div class="flex-grow">
-          <h4 class="text-lg font-serif leading-tight text-on-surface">Huevos de Pastoreo (Docena)</h4>
-          <p class="text-sm text-on-surface-variant mb-3">Gallinas libres • Cáscara dura</p>
-          <div class="flex items-center justify-between">
-            <span class="font-bold text-primary text-lg">$14.000</span>
-            <div class="flex items-center bg-surface-container-highest rounded-full px-3 py-1 gap-3 shadow-sm">
-              <button class="qty-btn text-primary hover:scale-110 transition-transform" aria-label="Disminuir" data-idx="2" data-action="dec">
-                <span class="material-symbols-outlined text-sm">remove</span>
-              </button>
-              <span class="font-body font-bold text-sm qty-2">1</span>
-              <button class="qty-btn text-primary hover:scale-110 transition-transform" aria-label="Aumentar" data-idx="2" data-action="inc">
-                <span class="material-symbols-outlined text-sm">add</span>
-              </button>
-            </div>
+          <div class="flex justify-between pb-3 border-b border-outline-variant/20">
+            <span class="text-on-surface-variant">Tasa de sostenibilidad</span>
+            <span>$1.200</span>
+          </div>
+          <div class="flex justify-between pt-3">
+            <span class="font-bold text-on-surface">Total a pagar</span>
+            <span id="total" class="text-2xl font-serif font-bold text-primary">$48.400</span>
           </div>
         </div>
-      </article>
-    </section>
+      </section>
 
-    <!-- Summary -->
-    <section class="bg-surface-container p-6 rounded-3xl mb-8 space-y-3 shadow-md">
-      <h3 class="text-lg font-serif font-bold mb-5">Resumen de Cosecha</h3>
-      <div class="flex justify-between text-sm">
-        <span class="text-on-surface-variant">Subtotal productos</span>
-        <span id="subtotal">$38.700</span>
+      <div class="pb-12">
+        <a href="checkout.html" class="block w-full bg-gradient-to-br from-primary to-primary-container text-on-primary py-4 rounded-xl font-body font-bold text-lg text-center shadow-lg hover:shadow-xl hover:scale-[1.01] transition-all">
+          Ir a pagar
+        </a>
+        <p class="text-center text-xs text-on-surface-variant mt-4">Tu compra apoya directamente a 2 familias agricultoras.</p>
       </div>
-      <div class="flex justify-between text-sm">
-        <span class="text-on-surface-variant">Logística de campo</span>
-        <span>$8.500</span>
+    </main>
+
+    <nav class="fixed bottom-0 left-0 right-0 z-50 bg-[#fdf9ef]/80 backdrop-blur-md border-t border-black/5 rounded-t-3xl shadow-[0_-4px_24px_rgba(28,28,22,0.06)]">
+      <div class="max-w-2xl mx-auto flex justify-around items-center px-4 pb-6 pt-3">
+        <a href="#" class="flex flex-col items-center justify-center text-[#1c1c16]/70 hover:text-primary transition-colors py-1 px-2">
+          <span class="material-symbols-outlined">grid_view</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] mt-1">Explorar</span>
+        </a>
+        <a href="#" class="flex flex-col items-center justify-center text-[#1c1c16]/70 hover:text-primary transition-colors py-1 px-2">
+          <span class="material-symbols-outlined">receipt_long</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] mt-1">Pedidos</span>
+        </a>
+        <a href="index.html" class="flex flex-col items-center justify-center bg-primary text-on-primary rounded-full px-4 py-2 shadow-md">
+          <span class="material-symbols-outlined">shopping_basket</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] mt-0.5">Cesta</span>
+        </a>
+        <a href="#" class="flex flex-col items-center justify-center text-[#1c1c16]/70 hover:text-primary transition-colors py-1 px-2">
+          <span class="material-symbols-outlined">account_circle</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] mt-1">Perfil</span>
+        </a>
       </div>
-      <div class="flex justify-between text-sm pb-3 border-b border-outline-variant/20">
-        <span class="text-on-surface-variant">Tasa de sostenibilidad</span>
-        <span>$1.200</span>
-      </div>
-      <div class="flex justify-between pt-3">
-        <span class="font-bold text-on-surface">Total a pagar</span>
-        <span id="total" class="text-2xl font-serif font-bold text-primary">$48.400</span>
-      </div>
-    </section>
+    </nav>
 
-    <div class="pb-12">
-      <a href="checkout.html" class="block w-full bg-gradient-to-br from-primary to-primary-container text-on-primary py-4 rounded-xl font-body font-bold text-lg text-center shadow-lg hover:shadow-xl transition-all hover:scale-[1.01]">
-        Ir a pagar
-      </a>
-      <p class="text-center text-xs text-on-surface-variant mt-4">Tu compra apoya directamente a 2 familias agricultoras.</p>
-    </div>
-  </main>
+    <script>
+      const productPrices = [18500, 6200, 14000];
+      const quantities = [2, 1, 1];
 
-  <!-- Footer Nav -->
-  <nav class="fixed bottom-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md border-t border-outline-variant/10 rounded-t-3xl">
-    <div class="max-w-2xl mx-auto flex justify-around items-center px-4 py-4">
-      <a href="#" class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors py-2">
-        <span class="material-symbols-outlined">grid_view</span>
-        <span class="text-xs uppercase tracking-wider mt-1 font-label">Explorar</span>
-      </a>
-      <a href="#" class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors py-2">
-        <span class="material-symbols-outlined">receipt_long</span>
-        <span class="text-xs uppercase tracking-wider mt-1 font-label">Pedidos</span>
-      </a>
-      <a href="index.html" class="flex flex-col items-center justify-center bg-primary text-on-primary rounded-full px-4 py-2">
-        <span class="material-symbols-outlined">shopping_basket</span>
-        <span class="text-xs uppercase tracking-wider font-label">Cesta</span>
-      </a>
-      <a href="#" class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-colors py-2">
-        <span class="material-symbols-outlined">account_circle</span>
-        <span class="text-xs uppercase tracking-wider mt-1 font-label">Perfil</span>
-      </a>
-    </div>
-  </nav>
+      function updateSummary() {
+        let subtotal = 0;
+        productPrices.forEach((price, i) => subtotal += price * quantities[i]);
+        const total = subtotal + 8500 + 1200;
+        document.getElementById('subtotal').textContent = '$' + subtotal.toLocaleString('es-ES');
+        document.getElementById('total').textContent = '$' + total.toLocaleString('es-ES');
+        localStorage.setItem('cartTotal', total);
+      }
 
-  <script>
-    const prices = [18500, 6200, 14000];
-    const quantities = [2, 1, 1];
-
-    document.querySelectorAll('.qty-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const idx = Number(btn.dataset.idx);
-        const action = btn.dataset.action;
-        if (action === 'inc') quantities[idx]++;
-        if (action === 'dec' && quantities[idx] > 0) quantities[idx]--;
-        document.querySelector(`.qty-${idx}`).textContent = quantities[idx];
-        updateSummary();
+      document.querySelectorAll('.qty-btn').forEach(button => {
+        button.addEventListener('click', () => {
+          const idx = Number(button.dataset.product);
+          const action = button.dataset.action;
+          if (action === 'inc') quantities[idx] += 1;
+          if (action === 'dec' && quantities[idx] > 0) quantities[idx] -= 1;
+          const qtyEl = document.querySelector('.qty-' + idx);
+          if (qtyEl) qtyEl.textContent = quantities[idx];
+          updateSummary();
+        });
       });
-    });
 
-    function updateSummary() {
-      let subtotal = 0;
-      prices.forEach((p, i) => subtotal += p * quantities[i]);
-      const total = subtotal + 8500 + 1200;
-      document.getElementById('subtotal').textContent = '$' + subtotal.toLocaleString('es-ES');
-      document.getElementById('total').textContent = '$' + total.toLocaleString('es-ES');
-      localStorage.setItem('cartTotal', total);
-    }
-  </script>
-</body>
+      updateSummary();
+    </script>
+  </body>
 </html>

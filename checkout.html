@@ -1,278 +1,289 @@
 <!DOCTYPE html>
 <html lang="es" class="light">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Checkout seguro - Cosecha Editorial" />
-  <meta name="theme-color" content="#355220" />
-  <title>Checkout - Cosecha Editorial</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            "primary-container": "#4c6b36",
-            "on-error": "#ffffff",
-            "on-error-container": "#93000a",
-            "on-surface": "#1c1c16",
-            "tertiary-fixed": "#ffdcbb",
-            "surface-bright": "#fdf9ef",
-            "on-primary": "#ffffff",
-            "on-tertiary-fixed": "#2b1700",
-            "inverse-surface": "#31312a",
-            "on-tertiary-fixed-variant": "#673d00",
-            "inverse-primary": "#add191",
-            "secondary-fixed": "#ffdcc4",
-            "on-primary-fixed-variant": "#314e1d",
-            "primary-fixed-dim": "#add191",
-            "secondary": "#924c00",
-            "surface-container-lowest": "#ffffff",
-            "primary-fixed": "#c9eeab",
-            "primary": "#355220",
-            "on-secondary-fixed-variant": "#6f3800",
-            "on-secondary-fixed": "#2f1400",
-            "on-secondary": "#ffffff",
-            "tertiary-fixed-dim": "#faba75",
-            "tertiary": "#6c4103",
-            "surface-tint": "#486732",
-            "surface-container-high": "#ece8de",
-            "on-background": "#1c1c16",
-            "on-primary-fixed": "#0a2000",
-            "secondary-fixed-dim": "#ffb781",
-            "on-primary-container": "#c6eaa8",
-            "tertiary-container": "#88581c",
-            "inverse-on-surface": "#f4f0e7",
-            "surface-variant": "#e6e2d9",
-            "on-tertiary-container": "#ffd8b2",
-            "on-secondary-container": "#703800",
-            "secondary-container": "#fda055",
-            "outline": "#74796d",
-            "surface": "#fdf9ef",
-            "on-tertiary": "#ffffff",
-            "outline-variant": "#c4c8ba",
-            "on-surface-variant": "#43483e",
-            "error-container": "#ffdad6",
-            "background": "#fdf9ef",
-            "surface-container-highest": "#e6e2d9",
-            "error": "#ba1a1a",
-            "surface-container": "#f1eee4",
-            "surface-dim": "#dddad0",
-            "surface-container-low": "#f7f3e9"
-          },
-          borderRadius: {
-            DEFAULT: "0.25rem",
-            lg: "0.5rem",
-            xl: "0.75rem",
-            "2xl": "1rem",
-            "3xl": "1.5rem",
-            full: "9999px"
-          },
-          fontFamily: {
-            headline: ["Newsreader", "serif"],
-            body: ["Plus Jakarta Sans", "sans-serif"],
-            label: ["Plus Jakarta Sans", "sans-serif"]
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Checkout seguro - Cosecha Editorial" />
+    <meta name="theme-color" content="#355220" />
+    <title>Checkout - Cosecha Editorial</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#4c6b36",
+              "on-error": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-surface": "#1c1c16",
+              "tertiary-fixed": "#ffdcbb",
+              "surface-bright": "#fdf9ef",
+              "on-primary": "#ffffff",
+              "on-tertiary-fixed": "#2b1700",
+              "inverse-surface": "#31312a",
+              "on-tertiary-fixed-variant": "#673d00",
+              "inverse-primary": "#add191",
+              "secondary-fixed": "#ffdcc4",
+              "on-primary-fixed-variant": "#314e1d",
+              "primary-fixed-dim": "#add191",
+              "secondary": "#924c00",
+              "surface-container-lowest": "#ffffff",
+              "primary-fixed": "#c9eeab",
+              "primary": "#355220",
+              "on-secondary-fixed-variant": "#6f3800",
+              "on-secondary-fixed": "#2f1400",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed-dim": "#faba75",
+              "tertiary": "#6c4103",
+              "surface-tint": "#486732",
+              "surface-container-high": "#ece8de",
+              "on-background": "#1c1c16",
+              "on-primary-fixed": "#0a2000",
+              "secondary-fixed-dim": "#ffb781",
+              "on-primary-container": "#c6eaa8",
+              "tertiary-container": "#88581c",
+              "inverse-on-surface": "#f4f0e7",
+              "surface-variant": "#e6e2d9",
+              "on-tertiary-container": "#ffd8b2",
+              "on-secondary-container": "#703800",
+              "secondary-container": "#fda055",
+              "outline": "#74796d",
+              "surface": "#fdf9ef",
+              "on-tertiary": "#ffffff",
+              "outline-variant": "#c4c8ba",
+              "on-surface-variant": "#43483e",
+              "error-container": "#ffdad6",
+              "background": "#fdf9ef",
+              "surface-container-highest": "#e6e2d9",
+              "error": "#ba1a1a",
+              "surface-container": "#f1eee4",
+              "surface-dim": "#dddad0",
+              "surface-container-low": "#f7f3e9"
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              "2xl": "1rem",
+              "3xl": "1.5rem",
+              full: "9999px"
+            },
+            fontFamily: {
+              headline: ["Newsreader", "serif"],
+              body: ["Plus Jakarta Sans", "sans-serif"],
+              label: ["Plus Jakarta Sans", "sans-serif"]
+            }
           }
         }
+      };
+    </script>
+    <style>
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background: #fdf9ef;
+        color: #1c1c16;
+        -webkit-font-smoothing: antialiased;
       }
-    };
-  </script>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fdf9ef; color: #1c1c16; -webkit-font-smoothing: antialiased; }
-    h1, h2, h3, h4 { font-family: 'Newsreader', serif; }
-    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; display: inline-flex; align-items: center; }
-    input[type="radio"] { appearance: none; width: 20px; height: 20px; border: 2px solid #c4c8ba; border-radius: 50%; cursor: pointer; background: transparent; transition: all 300ms; }
-    input[type="radio"]:checked { background-color: #355220; border-color: #355220; box-shadow: inset 0 0 0 3px #fdf9ef; }
-    input[type="radio"]:hover { border-color: #355220; }
-    button { transition: all 300ms; }
-    button:active { transform: scale(0.98); }
-    button:disabled { opacity: 0.5; cursor: not-allowed; }
-  </style>
-</head>
-<body class="bg-surface text-on-surface min-h-screen pb-32">
-  <!-- Header -->
-  <header class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md border-b border-outline-variant/10">
-    <div class="max-w-2xl mx-auto h-16 flex items-center justify-between px-6">
-      <button onclick="history.back()" class="w-10 h-10 rounded-full hover:bg-primary/10 transition-colors flex items-center justify-center" aria-label="Volver">
-        <span class="material-symbols-outlined text-primary">arrow_back</span>
-      </button>
-      <h1 class="text-2xl font-serif italic text-primary">Cosecha Editorial</h1>
-      <div class="w-10"></div>
-    </div>
-  </header>
+      h1, h2, h3, h4 { font-family: 'Newsreader', serif; }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+      input[type="radio"] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #c4c8ba;
+        border-radius: 9999px;
+        background: transparent;
+        position: relative;
+      }
+      input[type="radio"]:checked {
+        background: #355220;
+        border-color: #355220;
+        box-shadow: inset 0 0 0 3px #fdf9ef;
+      }
+      button, a { transition: all 300ms ease; }
+      button:active { transform: scale(0.98); }
+      button:disabled { opacity: 0.5; cursor: not-allowed; }
+    </style>
+  </head>
+  <body class="bg-surface text-on-surface min-h-screen pb-32">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#fdf9ef]/80 backdrop-blur-md border-b border-black/5">
+      <div class="max-w-2xl mx-auto h-16 flex items-center justify-between px-6">
+        <button onclick="history.back()" aria-label="Volver" class="w-10 h-10 rounded-full hover:bg-primary/10 flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary">arrow_back</span>
+        </button>
+        <h1 class="text-2xl font-serif italic text-primary">Cosecha Editorial</h1>
+        <div class="w-10"></div>
+      </div>
+    </header>
 
-  <!-- Main -->
-  <main class="pt-24 px-6 max-w-2xl mx-auto space-y-10 pb-12">
-    <section>
-      <span class="text-xs uppercase tracking-widest text-primary font-bold mb-2 block">Paso Final</span>
-      <h2 class="text-4xl font-serif italic font-bold text-on-surface leading-tight">Tu Cosecha Personal</h2>
-      <p class="text-on-surface-variant mt-3 text-sm leading-relaxed">Revisa los detalles antes de que los recolectores se pongan en marcha.</p>
-    </section>
+    <main class="pt-24 px-6 max-w-2xl mx-auto space-y-10 pb-12">
+      <section>
+        <span class="text-[10px] uppercase tracking-[0.26em] text-primary font-bold block mb-2">Paso Final</span>
+        <h2 class="text-4xl md:text-5xl font-serif italic text-on-surface leading-tight">Tu Cosecha Personal</h2>
+        <p class="text-[15px] text-on-surface-variant mt-3 leading-relaxed">Revisa los detalles antes de que los recolectores se pongan en marcha.</p>
+      </section>
 
-    <!-- Summary & Image -->
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div class="bg-surface-container-low rounded-3xl p-8 flex flex-col justify-between">
-        <div>
-          <h3 class="font-serif text-xl mb-6 text-primary">Resumen de Cesta</h3>
-          <div class="space-y-4">
-            <div class="flex justify-between items-center pb-4 border-b border-outline-variant/10">
-              <span class="text-sm text-on-surface-variant">Tomates de Árbol Rojos</span>
-              <span class="text-sm font-bold">2 × $18.500</span>
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-surface-container-low rounded-3xl p-8 flex flex-col justify-between shadow-soft">
+          <div>
+            <h3 class="font-serif text-xl mb-6 text-primary">Resumen de Cesta</h3>
+            <div class="space-y-4">
+              <div class="flex justify-between items-center pb-4 border-b border-outline-variant/10">
+                <span class="text-sm text-on-surface-variant">Tomates de Árbol Rojos</span>
+                <span class="text-sm font-bold">2 × $18.500</span>
+              </div>
+              <div class="flex justify-between items-center pb-4 border-b border-outline-variant/10">
+                <span class="text-sm text-on-surface-variant">Arúgula de Hoja Grande</span>
+                <span class="text-sm font-bold">1 × $6.200</span>
+              </div>
+              <div class="flex justify-between items-center pb-4 border-b border-outline-variant/10">
+                <span class="text-sm text-on-surface-variant">Huevos de Pastoreo</span>
+                <span class="text-sm font-bold">1 × $14.000</span>
+              </div>
             </div>
-            <div class="flex justify-between items-center pb-4 border-b border-outline-variant/10">
-              <span class="text-sm text-on-surface-variant">Arúgula de Hoja Grande</span>
-              <span class="text-sm font-bold">1 × $6.200</span>
-            </div>
-            <div class="flex justify-between items-center pb-4 border-b border-outline-variant/10">
-              <span class="text-sm text-on-surface-variant">Huevos de Pastoreo</span>
-              <span class="text-sm font-bold">1 × $14.000</span>
+          </div>
+          <div class="pt-6 mt-6 border-t border-outline-variant/10">
+            <div class="flex justify-between items-baseline">
+              <span class="text-lg text-on-surface-variant">Total</span>
+              <span class="text-3xl font-bold text-primary">$48.400</span>
             </div>
           </div>
         </div>
-        <div class="pt-6 mt-6 border-t border-outline-variant/10">
-          <div class="flex justify-between items-baseline">
-            <span class="text-lg text-on-surface-variant">Total</span>
-            <span class="text-3xl font-bold text-primary">$48.400</span>
+
+        <div class="relative overflow-hidden rounded-3xl min-h-[220px] group shadow-soft">
+          <div class="absolute inset-0 bg-black/5 z-10"></div>
+          <img src="https://images.unsplash.com/photo-1488459716781-a123dd36de6e?auto=format&fit=crop&w=800&q=80" alt="Cesta de cosecha" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy" />
+          <div class="absolute bottom-4 left-4 z-20 bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-[10px] uppercase tracking-[0.2em] font-bold">Cosecha Local</div>
+        </div>
+      </section>
+
+      <section class="space-y-4">
+        <div class="flex justify-between items-center">
+          <h3 class="font-serif text-2xl text-on-surface">Dirección de entrega</h3>
+          <button class="text-primary text-sm font-bold hover:underline">Editar</button>
+        </div>
+        <div class="bg-surface-container rounded-3xl overflow-hidden shadow-soft">
+          <div class="p-6">
+            <p class="font-body text-on-surface font-semibold">Calle de Serrano, 45, 3º Izquierda</p>
+            <p class="font-body text-on-surface-variant text-sm mt-1">28001 Madrid, España</p>
           </div>
-        </div>
-      </div>
-
-      <div class="relative overflow-hidden rounded-3xl min-h-80 group shadow-sm">
-        <div class="absolute inset-0 bg-black/5 z-10 pointer-events-none"></div>
-        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1488459716781-a123dd36de6e?auto=format&fit=crop&w=400&q=80" alt="Cesta de cosecha" loading="lazy" />
-        <div class="absolute bottom-4 left-4 z-20 bg-tertiary-container text-on-tertiary-container px-4 py-2 rounded-full text-xs uppercase tracking-wider font-bold">Cosecha Local</div>
-      </div>
-    </section>
-
-    <!-- Delivery Address -->
-    <section class="space-y-4">
-      <div class="flex justify-between items-center">
-        <h3 class="font-serif text-2xl text-on-surface">Dirección de entrega</h3>
-        <button class="text-primary text-sm font-bold hover:underline transition-colors">Editar</button>
-      </div>
-      <div class="bg-surface-container rounded-3xl overflow-hidden">
-        <div class="p-6">
-          <p class="font-body text-on-surface font-semibold">Calle de Serrano, 45, 3º Izquierda</p>
-          <p class="font-body text-on-surface-variant text-sm mt-1">28001 Madrid, España</p>
-        </div>
-        <div class="h-48 w-full bg-surface-container-highest relative overflow-hidden">
-          <img class="w-full h-full object-cover grayscale opacity-60" src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=400&h=200&q=80" alt="Mapa" loading="lazy" />
-          <div class="absolute inset-0 flex items-center justify-center">
-            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center animate-pulse">
-              <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+          <div class="h-48 w-full bg-surface-container-highest relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1000&q=80" alt="Mapa" class="w-full h-full object-cover grayscale opacity-60" loading="lazy" />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center animate-pulse">
+                <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Payment Methods -->
-    <section class="space-y-4">
-      <h3 class="font-serif text-2xl text-on-surface">Método de pago</h3>
-      <div class="space-y-3">
-        <label class="flex items-center justify-between p-5 bg-surface-container-low rounded-2xl cursor-pointer hover:bg-surface-container-lowest transition-all">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm">
-              <span class="font-bold text-xs" style="color: #00AEC7;">bizum</span>
+      <section class="space-y-4">
+        <h3 class="font-serif text-2xl text-on-surface">Método de pago</h3>
+        <div class="space-y-3">
+          <label class="flex items-center justify-between p-5 bg-surface-container-low rounded-2xl cursor-pointer hover:bg-surface-container-lowest transition-all shadow-sm">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm">
+                <span class="font-bold text-[11px]" style="color:#00AEC7;">bizum</span>
+              </div>
+              <div>
+                <span class="font-medium block text-on-surface">Bizum</span>
+                <span class="text-xs text-on-surface-variant">Transferencia instantánea</span>
+              </div>
             </div>
-            <div>
-              <span class="font-body font-medium block text-on-surface">Bizum</span>
-              <span class="text-xs text-on-surface-variant">Transferencia instantánea</span>
+            <input checked type="radio" name="payment" value="bizum" />
+          </label>
+
+          <label class="flex items-center justify-between p-5 bg-surface-container-low rounded-2xl cursor-pointer hover:bg-surface-container-lowest transition-all shadow-sm">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-8 bg-black rounded-lg flex items-center justify-center shadow-sm">
+                <span class="material-symbols-outlined text-white text-lg" style="font-variation-settings: 'FILL' 1;">ios</span>
+              </div>
+              <div>
+                <span class="font-medium block text-on-surface">Apple Pay</span>
+                <span class="text-xs text-on-surface-variant">Rápido y seguro</span>
+              </div>
             </div>
-          </div>
-          <input checked type="radio" name="payment" value="bizum" />
+            <input type="radio" name="payment" value="apple" />
+          </label>
+
+          <label class="flex items-center justify-between p-5 bg-surface-container-low rounded-2xl cursor-pointer hover:bg-surface-container-lowest transition-all shadow-sm">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm">
+                <span class="material-symbols-outlined text-on-surface-variant">credit_card</span>
+              </div>
+              <div>
+                <span class="font-medium block text-on-surface">Tarjeta de crédito</span>
+                <span class="text-xs text-on-surface-variant">Visa •••• 8821</span>
+              </div>
+            </div>
+            <input type="radio" name="payment" value="card" />
+          </label>
+        </div>
+      </section>
+
+      <section class="space-y-4">
+        <label class="flex items-center gap-3 p-4 bg-surface-container-low rounded-2xl cursor-pointer shadow-sm">
+          <input id="terms" type="checkbox" class="w-5 h-5 accent-primary rounded" />
+          <span class="text-sm text-on-surface-variant">
+            Acepto los <a href="#" class="text-primary font-semibold hover:underline">términos y condiciones</a> y la <a href="#" class="text-primary font-semibold hover:underline">política de privacidad</a>
+          </span>
         </label>
-        <label class="flex items-center justify-between p-5 bg-surface-container-low rounded-2xl cursor-pointer hover:bg-surface-container-lowest transition-all">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-8 bg-black rounded-lg flex items-center justify-center shadow-sm">
-              <span class="material-symbols-outlined text-white text-lg" style="font-variation-settings: 'FILL' 1;">ios</span>
-            </div>
-            <div>
-              <span class="font-body font-medium block text-on-surface">Apple Pay</span>
-              <span class="text-xs text-on-surface-variant">Rápido y seguro</span>
-            </div>
-          </div>
-          <input type="radio" name="payment" value="apple" />
-        </label>
-        <label class="flex items-center justify-between p-5 bg-surface-container-low rounded-2xl cursor-pointer hover:bg-surface-container-lowest transition-all">
-          <div class="flex items-center gap-4">
-            <div class="w-12 h-8 bg-white rounded-lg flex items-center justify-center shadow-sm">
-              <span class="material-symbols-outlined text-on-surface-variant">credit_card</span>
-            </div>
-            <div>
-              <span class="font-body font-medium block text-on-surface">Tarjeta de Crédito</span>
-              <span class="text-xs text-on-surface-variant">Visa •••• 8821</span>
-            </div>
-          </div>
-          <input type="radio" name="payment" value="card" />
-        </label>
-      </div>
-    </section>
 
-    <!-- Terms & Security -->
-    <section class="space-y-4">
-      <label class="flex items-center gap-3 p-4 bg-surface-container-low rounded-2xl cursor-pointer">
-        <input id="terms" type="checkbox" class="w-5 h-5 accent-primary rounded" />
-        <span class="text-sm text-on-surface-variant">
-          Acepto los <a href="#" class="text-primary font-semibold hover:underline">términos</a> y <a href="#" class="text-primary font-semibold hover:underline">privacidad</a>
-        </span>
-      </label>
-      <div class="flex items-center justify-center gap-2 text-on-surface-variant text-sm py-4 px-4 bg-surface-container-low rounded-2xl">
-        <span class="material-symbols-outlined text-base">lock</span>
-        <span class="text-xs uppercase tracking-widest">100% Seguro y Encriptado</span>
-      </div>
-    </section>
+        <div class="flex items-center justify-center gap-2 text-on-surface-variant text-sm py-4 px-4 bg-surface-container-low rounded-2xl shadow-sm">
+          <span class="material-symbols-outlined text-base">lock</span>
+          <span class="text-xs uppercase tracking-[0.2em]">Pago 100% seguro y encriptado</span>
+        </div>
+      </section>
 
-    <!-- Impact -->
-    <div class="bg-primary/5 rounded-2xl p-6 border-l-4 border-primary">
-      <div class="flex gap-4">
-        <span class="material-symbols-outlined text-primary text-2xl flex-shrink-0" style="font-variation-settings: 'FILL' 1;">eco</span>
-        <div>
-          <h4 class="font-serif italic text-primary font-semibold mb-1">Tu compra hace la diferencia</h4>
-          <p class="text-sm text-on-surface-variant leading-relaxed">Apoyas a 2 familias agricultoras y reduces <strong>2.3 kg CO₂</strong> vs distribución convencional.</p>
+      <div class="bg-primary/5 rounded-2xl p-6 border-l-4 border-primary shadow-sm">
+        <div class="flex gap-4">
+          <span class="material-symbols-outlined text-primary text-2xl flex-shrink-0" style="font-variation-settings: 'FILL' 1;">eco</span>
+          <div>
+            <h4 class="font-serif italic text-primary font-semibold mb-1">Tu compra hace la diferencia</h4>
+            <p class="text-sm text-on-surface-variant leading-relaxed">Apoyas a 2 familias agricultoras y reduces <strong>2.3 kg CO₂</strong> frente a la distribución convencional.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <!-- Footer -->
-  <footer class="fixed bottom-0 left-0 right-0 bg-surface/90 backdrop-blur-xl p-6 border-t border-outline-variant/10 z-40">
-    <div class="max-w-2xl mx-auto space-y-3">
-      <button id="payBtn" disabled class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary py-4 rounded-3xl font-body font-bold text-lg shadow-xl transition-all flex items-center justify-center gap-3 disabled:opacity-50">
-        <span class="material-symbols-outlined">verified_user</span>
-        <span id="payText">Confirmar y Pagar $48.400</span>
-      </button>
-      <p class="text-center text-xs text-on-surface-variant">Tu compra apoya a 2 familias agricultoras.</p>
-    </div>
-  </footer>
+    <footer class="fixed bottom-0 left-0 right-0 bg-[#fdf9ef]/90 backdrop-blur-xl p-6 border-t border-black/5 z-40">
+      <div class="max-w-2xl mx-auto">
+        <button id="payBtn" disabled class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary py-4 rounded-3xl font-body font-bold text-lg shadow-xl shadow-primary/20 transition-all flex items-center justify-center gap-3 disabled:opacity-50">
+          <span class="material-symbols-outlined">verified_user</span>
+          <span id="payText">Confirmar y Pagar $48.400</span>
+        </button>
+      </div>
+    </footer>
 
-  <script>
-    const payBtn = document.getElementById('payBtn');
-    const terms = document.getElementById('terms');
-
-    function checkValid() {
-      payBtn.disabled = !terms.checked;
-    }
-
-    terms.addEventListener('change', checkValid);
-    payBtn.addEventListener('click', async () => {
-      if (payBtn.disabled) return;
-      payBtn.disabled = true;
-      const text = document.getElementById('payText');
-      const orig = text.textContent;
-      text.textContent = 'Procesando...';
-      await new Promise(r => setTimeout(r, 2000));
-      window.location.href = 'confirmation.html';
-    });
-
-    checkValid();
-  </script>
-</body>
+    <script>
+      const terms = document.getElementById('terms');
+      const payBtn = document.getElementById('payBtn');
+      function validateCheckout() {
+        payBtn.disabled = !terms.checked;
+      }
+      terms.addEventListener('change', validateCheckout);
+      payBtn.addEventListener('click', async () => {
+        if (payBtn.disabled) return;
+        payBtn.disabled = true;
+        const text = document.getElementById('payText');
+        text.textContent = 'Procesando...';
+        await new Promise(resolve => setTimeout(resolve, 1800));
+        window.location.href = 'confirmation.html';
+      });
+      validateCheckout();
+    </script>
+  </body>
 </html>
